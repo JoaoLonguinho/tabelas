@@ -11,14 +11,20 @@
         }
         table{
             border-collapse: collapse; /* gruda uma borda na outra, deixa sem espaço de separação */
+            width: 400px;
+            height: 400px;
         }
         tr.linha{
             background-color: lightcyan;
         }
         td{
             border: 1px solid black;
-            width: 200px;
             padding: 8px;
+            text-align: center; /* alinhamento horizontal */
+            vertical-align: top; /* alinhamento vertical */
+        }
+        .numero {
+            text-align: right; 
         }
     </style>
 </head>
@@ -38,7 +44,7 @@
         </tr>
         <tr>
             <td>A2</td>
-            <td>B2</td>
+            <td class="numero">B2</td>
             <td>C2</td>
         </tr>
         <tr class="linha">
